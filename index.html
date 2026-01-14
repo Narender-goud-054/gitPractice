@@ -10,5 +10,17 @@
         <p>This is a simple HTML document structure.</p>
         <p> this is a change i want to revert</p>
         <p>Change to try cherry pick</p>
+
+        <p>Counting number:</p>
+        <p id="count">0</p>
+        <button onclick="increaseCount">Increase</button>
+        <script>
+            function increaseCount(){
+                let p = document.querySelector("#count");
+                let count = parseInt(p.innerText);
+                count += 1;
+                p.innerText = count;
+            }
+        </script>
     </body>
 </html>
